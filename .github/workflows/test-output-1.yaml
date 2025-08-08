@@ -34,6 +34,7 @@ jobs:
       - name: using >
         id: step3
         run: |
+          echo "$GITHUB_OUTPUT"
           echo "status=${{ inputs.build-message }}" >> "$GITHUB_OUTPUT"
           echo "output2=value2" > "$GITHUB_OUTPUT"
           cat "$GITHUB_OUTPUT"
